@@ -1,0 +1,30 @@
+/* Mobile S 320px*/
+@media (min-width: 0px) and (max-width: 320px) {
+
+}
+
+/* Mobile M 375px*/
+@media (min-width: 320px) and (max-width: 320px) {
+    
+}
+
+/* Mobile L 425*/
+@media (min-width: 375px) and (max-width: 425px) {
+    
+}
+
+/* Tablet 768px*/
+@media (min-width: 425px) and (max-width: 768px) {
+
+}
+
+/* Laptop 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* 4K 2560px*/
+@media (min-width: 1440px) and (max-width: 2560px) {
+    
+}
+

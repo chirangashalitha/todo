@@ -1,0 +1,102 @@
+/* Colors */
+:root {
+    --color-default-: ;
+    --color-primary-: ;
+    --color-secondary-: ;
+    --color-tertiary-: ;
+    --color-4-: ;
+    --color-5-: ;
+    --color-bg-: ;
+    --color-secondary-bg-: ;
+}
+/* -------------------------------------------------------------- */
+
+:root {
+    scroll-behavior: smooth;
+  }
+
+/* -------------------------------------------------------------- */
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #14967F, #095D7E);
+    color: black;
+}
+
+.container {
+    background-color: white;
+    padding: 50px;
+}
+
+.new-task {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.new-task input {
+    border-radius: 10px;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.new-task input:focus {
+    border-radius: 10px;
+    outline-color:#095D7E;
+}
+
+#btn-add {
+    border-radius: 10px;
+    border: none;
+    background-color: #095D7E;
+    padding: 5px 10px;
+    color: white;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    margin: 20px 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: -40px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(../images/checked.png);
+    background-color: #E2FCD6;
+}
+
+ul li span {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    text-align: end;
+    text-decoration: underline;
+    color: #095D7E;
+}
+
+ul li span:hover {
+    background-color: #edeef0;
+}
